@@ -1,0 +1,24 @@
+<form class="form" #f="ngForm" (ngSubmit)="SaveForm(f.value)">
+    <tr>
+        <td>Name</td>
+        <td><input name="name" type="text" [(ngModel)]="employee.name" /></td>
+    </tr>
+    <tr>
+        <td>imageUrl</td>
+        <td>
+            <input name="imageUrl" type="text" [(ngModel)]="employee.imageUrl" />
+        </td>
+    </tr>
+    <tr>
+        <td>Created</td>
+        <td>
+            <input name="createdAt" type="date" [(ngModel)]="employee.createdAt" />
+        </td>
+    </tr>
+   <tr>
+        <td>
+            <button type="submit">Save</button>
+            <button type="button">Save</button>
+        </td>
+    </tr>
+</form>
