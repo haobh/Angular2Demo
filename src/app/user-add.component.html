@@ -1,0 +1,30 @@
+<form class="form" #f="ngForm" (ngSubmit)="SaveForm(f.value)">
+    <tr>
+        <td>Name</td>
+        <td><input name="Name" type="text" [(ngModel)]="name" /></td>
+    </tr>
+    <tr>
+        <td>UserName</td>
+        <td>
+            <input name="userName" type="text" [(ngModel)]="userName" />
+        </td>
+    </tr>
+    <tr>
+        <td>Password</td>
+        <td>
+            <input name="passWord" type="password" [(ngModel)]="passWord" />
+        </td>
+    </tr>
+    <tr>
+        <td>Status</td>
+        <td>
+            <input name="status" type="checkbox" [(ngModel)]="status" />
+        </td>
+    </tr>
+   <tr>
+        <td>
+            <button type="submit">Save</button>
+            <button type="button">Cancel</button>
+        </td>
+    </tr>
+</form>

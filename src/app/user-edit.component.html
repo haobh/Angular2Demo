@@ -1,0 +1,25 @@
+{{user | json}}
+<form class="form" #f="ngForm" (ngSubmit)="SaveForm(f.value)" *ngIf="user">
+    <tr>
+        <td>Name</td>
+        <td><input name="name" type="text" [(ngModel)]="user.Name" /></td>
+    </tr>
+    <tr>
+        <td>userName</td>
+        <td>
+            <input name="userName" type="text" [(ngModel)]="user.UserName" />
+        </td>
+    </tr>
+    <tr>
+        <td>Status</td>
+        <td>
+            <input name="status" type="checkbox" [(ngModel)]="user.Status" />
+        </td>
+    </tr>
+   <tr>
+        <td>
+            <button type="submit">Save</button>
+            <button type="button">Cancel</button>
+        </td>
+    </tr>
+</form>
